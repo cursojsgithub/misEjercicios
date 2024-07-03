@@ -8,9 +8,32 @@
     <script src="calculadoraIMC.js"></script>
 </head>
 <body>
-    <input type="text" name="" id="iNombre" placeholder="Nombre">
-    <input type="number" name="" id="iAltura" placeholder="Altura">
-    <input type="number" name="" id="iPeso" placeholder="Peso">
-    <button>Calcular</button>
+    <div id="principal">
+        <div>
+            <input type="text" name="" id="iNombre" placeholder="Nombre" class="form">
+        </div>
+        <div>
+            <input type="number" name="" id="iAltura" placeholder="Altura" class="form">
+        </div>
+        <div>
+            <input type="number" name="" id="iPeso" placeholder="Peso" class="form">
+        </div>
+        <div>
+            <button onclick="calcular()" class="form">Calcular</button>
+        </div>
+        <div style="margin: 4px;">
+            Resultado
+        </div>
+        <div id="resultado">
+H
+        </div>
+    </div>
 </body>
 </html>
+<script>
+    function calcular(){
+        let altura = document.getElementById("iAltura").value;
+        let peso = document.getElementById("iPeso").value;
+        let IMC = calculaIMC(peso,altura);
+    }
+</script>
