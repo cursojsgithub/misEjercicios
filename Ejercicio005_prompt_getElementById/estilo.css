@@ -1,0 +1,43 @@
+#nombre{
+    background-color: rgb(0, 128, 255);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 3px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: beige;
+}
+#altura{
+    background-color: rgb(0, 183, 255);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 3px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: beige;
+}
+#peso{
+    background-color: rgb(64, 203, 182);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 3px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: beige;
+}   
+#IMC{
+    background-color: rgb(179, 179, 0);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 3px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: beige;
+}
+#tabla{
+    align-items: center;
+}

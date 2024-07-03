@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="calculadoraIMC.js"></script>
+</head>
+<body>
+    <table id="tabla" width="50%" style="margin: 0 auto;" >
+        <td width="33%">
+            <div id="nombre"></div>
+        </td>
+        <td width="33%">
+            <div id="altura"></div>
+        </td>
+        <td width="33%">
+            <div id="peso"></div>
+        </td>
+    </table>
+    
+    <div id="IMC" ></div>
+    <script>
+        let nombre = prompt("Dame tu nombre: ", "Victor");
+        let altura = prompt("Dame tu altura: ", 180);
+        let peso = prompt("Dame tu peso: ", 90);
+        document.getElementById("nombre").innerHTML = nombre;
+        document.getElementById("altura").innerHTML = altura;
+        document.getElementById("peso").innerHTML = peso;
+        document.getElementById("IMC").innerHTML = "Masa corporal <br>" + calculaIMC(peso,altura);
+    </script>
+</body>
+</html>
