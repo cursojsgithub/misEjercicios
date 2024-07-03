@@ -8,12 +8,11 @@
     margin: auto;
 }
 #resultado{
-    width: 100px;
     background-color: blue;
     color: white;
-    text-align: center;
     border-radius: 100px;
-    padding: 10px;
+    padding: 20px;
+    margin: 0px 50px 0px 50px;
 }
 
 .form{
@@ -22,6 +21,5 @@
     margin: 6px;
     border-radius: 8px;
     padding: 8px;
-    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

@@ -21,11 +21,7 @@
         <div>
             <button onclick="calcular()" class="form">Calcular</button>
         </div>
-        <div style="margin: 4px;">
-            Resultado
-        </div>
-        <div id="resultado">
-H
+        <div id="resultado" class="form">
         </div>
     </div>
 </body>
@@ -35,5 +31,6 @@ H
         let altura = document.getElementById("iAltura").value;
         let peso = document.getElementById("iPeso").value;
         let IMC = calculaIMC(peso,altura);
+        document.getElementById("resultado").innerHTML=IMC
     }
 </script>
