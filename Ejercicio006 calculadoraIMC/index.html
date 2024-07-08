@@ -10,13 +10,20 @@
 <body>
     <div id="principal">
         <div>
-            <input type="text" name="" id="iNombre" placeholder="Nombre" class="form">
+            <input type="text" name="" id="iNombre" placeholder="Nombre" class="form"><br>
+            <span id="errorNombre"></span>
         </div>
         <div>
-            <input type="number" name="" id="iAltura" placeholder="Altura" class="form">
+            <input type="number" name="" id="iEdad" placeholder="Edad" class="form"><br>
+            <span id="errorEdad"></span>
         </div>
         <div>
-            <input type="number" name="" id="iPeso" placeholder="Peso" class="form">
+            <input type="number" name="" id="iAltura" placeholder="Altura" class="form"><br>
+            <span id="errorAltura"></span>
+        </div>
+        <div>
+            <input type="number" name="" id="iPeso" placeholder="Peso" class="form"><br>
+            <span id="errorPeso"></span>
         </div>
         <div>
             <button onclick="calcular()" class="form">Calcular</button>
@@ -26,6 +33,9 @@
     </div>
 </body>
 </html>
+<!--
+
+
 <script>
     function calcular(){
         let altura = document.getElementById("iAltura").value;
@@ -34,3 +44,4 @@
         document.getElementById("resultado").innerHTML=IMC
     }
 </script>
+-->

@@ -1,0 +1,17 @@
+.fragmento{
+    text-align: center;
+    margin: 5px;
+}
+.campo{
+    border: 2px black solid;
+    text-align: center;
+}
+#login{
+    width: 200px;
+    border: 2px black solid;
+    text-align: center;
+}
+.error{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
