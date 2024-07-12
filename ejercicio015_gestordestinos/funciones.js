@@ -1,5 +1,11 @@
 let participantes =[];
 
+let participantesAlmacenados = localStorage.getItem("participantes");
+if (participantesAlmacenados!=null){
+    participantes = JSON.parse(participantesAlmacenados);
+    crearFicha(participantes);
+}
+
 document.querySelector("#bAgregar").addEventListener("click", (event) =>{
     let corredor = document.querySelector("#iCorredor").value;
     let dorsal = document.querySelector("#iDorsal").value;
@@ -18,9 +24,14 @@ function crearFicha(participantes){
     let fichaCiclista= "";
     participantes.map((ciclista) =>{
         fichaCiclista+= `<div id="ficha">
-                            <div> ${ciclista.corredor}</div>
-                            <div> ${ciclista.dorsal}</div>
+                            <div id="nombre"> ${ciclista.corredor}</div>
                             <div class="foto">  <img src="${ciclista.fotografia}" class="foto"></div>
+                            <div id="dorsal" > 
+                            <div id="franja">
+                            ${ciclista.corredor}
+                            </div>
+                            ${ciclista.dorsal}
+                            </div>
                         </div>`
 
     })
@@ -28,4 +39,9 @@ function crearFicha(participantes){
     document.querySelector("#iCorredor").value="";
     document.querySelector("#iDorsal").value="";
     document.querySelector("#iFotografia").value="";
+}
+document.querySelector("#bGuardar").addEventListener("click", guardar);
+function guardar(){
+    let strParticipantes = JSON.stringify(participantes);
+    localStorage.setItem("participantes", strParticipantes);
 }
