@@ -8,3 +8,17 @@
 #gato1 img{
     width: 100%;
 }
+footer{
+    background-color: brown;
+    height: 100px;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    position: fixed;
+    transition: all 1s, linear 1s;
+}
+#bCerrar{
+    position: absolute;
+    right: 1em;
+    top: 0.5em;
+}
