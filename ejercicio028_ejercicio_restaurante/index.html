@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="restaurantes">
+        <div class="restaurante">
+            <div id="imagen">
+                <img src=https://res.cloudinary.com/tf-lab/image/upload/w_3840,c_fill,q_auto,f_auto/restaurant/b7d0f048-9e84-4999-a84c-e79d98355100/1bcf6b9c-dd07-4f05-bfef-133e62db7350.jpg>
+            </div>
+            <div id="informacion">
+                <div id="nombre">QUIMBAYA by Edwin Rodríguez</div>
+                <div id="estilo">Italiano</div>
+                <div id="precio">70 euros</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function crearFila(imagen, nombre, estilo, precio){
+        let divRestaurante = document.createElement("div");
+        divRestaurante.classList.add("restaurante")
+        document.querySelector("#restaurantes").appendChild(res)
+    }
+</script>

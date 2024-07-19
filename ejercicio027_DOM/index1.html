@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación de elementos en DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let encabezado = document.createElement("h1");
+    document.querySelector("body").appendChild(encabezado);
+    let textoEncabezado = document.createTextNode("Sección principal");
+    encabezado.appendChild(textoEncabezado);
+    let atributoEncabezado = document.createAttribute("class");
+    atributoEncabezado.value = "rojo";
+    encabezado.setAttributeNode(atributoEncabezado);
+
+    encabezado.setAttribute("id", "encabezado1");
+
+    setInterval(()=>{
+        if(atributoEncabezado.value=="rojo"){
+            atributoEncabezado.value = "verde";
+        }
+        else{
+            atributoEncabezado.value="rojo"
+        }
+    }, 3000)
+</script>
