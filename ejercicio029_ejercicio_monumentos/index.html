@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monumentos Vigo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="monumentos">
+        <!--
+
+        
+        <div class="ficha">
+            <div class="imagen">
+                <img src="http://www.turismodevigo.org/sites/turismodevigo/files/lug274.jpg">
+            </div>
+            <div class="informacion">
+                <div class="datos"> "Monumento a los Galeones de Rande"</div>
+                <div class="datos">"Monte do Castro"</div>
+                <div class="datos">"Obra del arquitecto Desiderio Pernas, es una gran plataforma sobre la que están situadas tres anclas 
+                    de navíos hundidos en la Batalla de Rande, librada en la Ría de Vigo en 1702 entre la armada 
+                    anglo-holandesa y una flota  hispana y francesa."</div>
+            </div>
+        </div>
+        -->
+    </div>
+    
+</body>
+</html>
+<script src="/js/scripts.js"></script>
+<script src="/js/dom.js"></script>
+<script>
+
+    //let imagen = "http://www.turismodevigo.org/sites/turismodevigo/files/lug274.jpg";
+    //let titulo = "Monumento a los Galeones de Rande";
+    //let direccion = "Monte do Castro";
+    //let descripcion = "Obra del arquitecto Desiderio Pernas, es una gran plataforma sobre la que están situadas tres anclas de navíos hundidos en la Batalla de Rande, librada en la Ría de Vigo en 1702 entre la armada anglo-holandesa y una flota  hispana y francesa."
+    
+    
+    //crearFicha(imagen, titulo, direccion, descripcion);
+    
+    
+    doGetHTTPRequest("https://datos.vigo.org", "443", "/data/turismo/poi-monumentos-es.json", callbackMonumentos, null);
+
+    function callbackMonumentos(texto){
+        console.log(texto);
+        let monumentos = JSON.parse(texto);
+        monumentos.forEach(monumento => {
+            crearFicha(monumento.image_uri, monumento.title, monumento.address, monumento.description)
+        });
+    }
+
+
+</script>

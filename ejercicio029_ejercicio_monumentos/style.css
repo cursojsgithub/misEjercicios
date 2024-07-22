@@ -1,0 +1,27 @@
+.ficha{
+    width: 100%;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.112);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.112);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.imagen{
+    background-color: rgb(255, 255, 255);
+    flex-grow: 3;
+}
+
+.imagen img{
+    width: 90%;
+    margin: 2%;
+    border-radius: 5px;
+}
+
+.informacion{
+    flex-grow: 7;
+    
+}
+.datos{
+    margin: 2%;
+    margin-bottom: 10px;
+}
